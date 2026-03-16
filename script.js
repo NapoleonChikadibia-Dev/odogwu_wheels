@@ -1,4 +1,4 @@
-const images = ["odogwu_wheelsimg/caroff.png", "odogwu_wheelsimg/caron.png"];
+const images = ["odogwu_wheels/img/caroff.png", "odogwu_wheels/img/caron.png"];
 
 let index = 0;
 const slider = document.getElementById("slider");
