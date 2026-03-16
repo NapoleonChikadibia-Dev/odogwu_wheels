@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Odugwu wheels is a car dealership in the heart of world." />
+  <meta name="keywords" content="car dealership, cars, vehicles, sales, service" />
+  <meta name="author" content="Odugwu Wheels Team" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="/img/Odugwu wheels.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Odugwu Wheels</title>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-container">
+      <img src="/img/Odugwu wheels.png"
+        alt="Odugwu Wheels logo with bold modern lettering Odugwu Wheels, centered on a clean background. The logo conveys excitement and professionalism. The wider environment is minimal and bright, evoking a sense of optimism. Text present: Odugwu Wheels."
+        class="preload-logo"> <!-- or your new Odugwu logo -->
+      <div class="pulse-ring"></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-circle"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="/img/Odugwu wheels.png" alt="Odugwu Wheels Logo" />
+    </div>
+
+    <!-- HAMBURGER (hidden on desktop, shown on small screens) -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <nav class="nav-menu" id="menu">
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#trending">Trending Cars</a></li>
+        <li><a href="#brands">Our Brands</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="first_section">
+    <video autoplay muted loop class="bg_video">
+      <source src="/img/dots motion.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>
+        Welcome to <br>
+        Odogwu Wheels<br>
+        <span class="typing"></span>
+      </h1>
+      <p>Explore our inventory and find your perfect ride today!</p>
+    </div>
+    <div class="image_container">
+      <img id="slider" src="/img/caroff.png" alt="slider image">
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="second_section">
+    <video autoplay muted loop playsinline class="bg_video2">
+      <source src="/img/car reviews.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="sub">
+      <h1>Subscribe to Odogwu Wheels</h1>
+      <p>Get updated on our latest car arrivals — subscribe now!</p>
+
+      <!-- FORM  -->
+      <form onsubmit="return validateEmail(event)" class="subscribe-form">
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required
+            autocomplete="email">
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+      </form>
+      <p id="msg"></p>
+  </section>
+
+  <!-- TRENDING SECTION -->
+  <section id="trending" class="third_section">
+    <div class="swiper carSwiper">
+      <h2>Trending</h2>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/img/Tesla.jpg" alt="Tesla">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>TESLA</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/AUDI.jpg" alt="Audi">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>AUDI</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/BMW.jpg" alt="BMW">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>BMW</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/BUGATTI.jpg" alt="Bugatti">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>BUGATTI</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/Lamborghini.jpg" alt="Lamborghini">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>LAMBORGHINI</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/lexus.jpg" alt="Lexus">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>LEXUS</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/mecerdes benz.jpg" alt="Mercedes">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>MERCEDES</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/Toyota.jpg" alt="Toyota">
+          <div class="overlay"></div>
+          <div class="caption">
+            <h2>TOYOTA</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS SECTION -->
+  <section id="brands" class="fourth-section">
+    <h2
+      style="text-align:center; color:silver; font-size:4.2rem; margin-bottom:4rem; font-family:'Poppins'; font-weight:300;">
+      Explore Our Premium Brands
+    </h2>
+
+    <div class="carousel-wrapper">
+
+      <!-- Row 1 (left scroll) -->
+      <div class="carousel" data-direction="left">
+        <div class="track">
+          <a href="#brand-toyota" class="car-names" id="brand-toyota"><img src="/img/car logo/toyota.png"
+              alt="Toyota"><span>Toyota</span></a>
+          <a href="#brand-bmw" class="car-names" id="brand-bmw"><img src="/img/car logo/bmw.png"
+              alt="BMW"><span>BMW</span></a>
+          <a href="#brand-mercedes" class="car-names" id="brand-mercedes"><img src="/img/car logo/mercedes benz.png"
+              alt="Mercedes-Benz"><span>Mercedes-Benz</span></a>
+          <a href="#brand-ford" class="car-names" id="brand-ford"><img src="/img/car logo/ford.png"
+              alt="Ford"><span>Ford</span></a>
+          <a href="#brand-honda" class="car-names" id="brand-honda"><img src="/img/car logo/honda.png"
+              alt="Honda"><span>Honda</span></a>
+          <a href="#brand-volkswagen" class="car-names" id="brand-volkswagen"><img src="/img/car logo/volkswagen.png"
+              alt="Volkswagen"><span>Volkswagen</span></a>
+          <a href="#brand-audi" class="car-names" id="brand-audi"><img src="/img/car logo/audi.png"
+              alt="Audi"><span>Audi</span></a>
+          <a href="#brand-tesla" class="car-names" id="brand-tesla"><img src="/img/car logo/tesla.png"
+              alt="Tesla"><span>Tesla</span></a>
+          <a href="#brand-porsche" class="car-names" id="brand-porsche"><img src="/img/car logo/porsche.png"
+              alt="Porsche"><span>Porsche</span></a>
+          <a href="#brand-ferrari" class="car-names" id="brand-ferrari"><img src="/img/car logo/ferari.png"
+              alt="Ferrari"><span>Ferrari</span></a>
+
+          <!-- Duplicates for infinite scroll -->
+          <a href="#brand-toyota" class="car-names"><img src="/img/car logo/toyota.png"
+              alt="Toyota"><span>Toyota</span></a>
+          <a href="#brand-bmw" class="car-names"><img src="/img/car logo/bmw.png" alt="BMW"><span>BMW</span></a>
+          <a href="#brand-mercedes" class="car-names"><img src="/img/car logo/mercedes benz.png"
+              alt="Mercedes-Benz"><span>Mercedes-Benz</span></a>
+          <a href="#brand-ford" class="car-names"><img src="/img/car logo/ford.png" alt="Ford"><span>Ford</span></a>
+          <a href="#brand-honda" class="car-names"><img src="/img/car logo/honda.png" alt="Honda"><span>Honda</span></a>
+          <a href="#brand-volkswagen" class="car-names"><img src="/img/car logo/volkswagen.png"
+              alt="Volkswagen"><span>Volkswagen</span></a>
+          <a href="#brand-audi" class="car-names"><img src="/img/car logo/audi.png" alt="Audi"><span>Audi</span></a>
+          <a href="#brand-tesla" class="car-names"><img src="/img/car logo/tesla.png" alt="Tesla"><span>Tesla</span></a>
+          <a href="#brand-porsche" class="car-names"><img src="/img/car logo/porsche.png"
+              alt="Porsche"><span>Porsche</span></a>
+          <a href="#brand-ferrari" class="car-names"><img src="/img/car logo/ferari.png"
+              alt="Ferrari"><span>Ferrari</span></a>
+        </div>
+      </div>
+
+      <!-- Row 2 (right scroll) -->
+      <div class="carousel" data-direction="right">
+        <div class="track">
+          <a href="#brand-lamborghini" class="car-names" id="brand-lamborghini"><img src="/img/car logo/lamborghini.png"
+              alt="Lamborghini"><span>Lamborghini</span></a>
+          <a href="#brand-nissan" class="car-names" id="brand-nissan"><img src="/img/car logo/nissan.png"
+              alt="Nissan"><span>Nissan</span></a>
+          <a href="#brand-chevrolet" class="car-names" id="brand-chevrolet"><img src="/img/car logo/chevrolet.png"
+              alt="Chevrolet"><span>Chevrolet</span></a>
+          <a href="#brand-hyundai" class="car-names" id="brand-hyundai"><img src="/img/car logo/hyundai.png"
+              alt="Hyundai"><span>Hyundai</span></a>
+          <a href="#brand-kia" class="car-names" id="brand-kia"><img src="/img/car logo/kia.png"
+              alt="Kia"><span>Kia</span></a>
+          <a href="#brand-subaru" class="car-names" id="brand-subaru"><img src="/img/car logo/suruba.png"
+              alt="Subaru"><span>Subaru</span></a>
+          <a href="#brand-mazda" class="car-names" id="brand-mazda"><img src="/img/car logo/mazda.png"
+              alt="Mazda"><span>Mazda</span></a>
+          <a href="#brand-lexus" class="car-names" id="brand-lexus"><img src="/img/car logo/lexus.png"
+              alt="Lexus"><span>Lexus</span></a>
+          <a href="#brand-jaguar" class="car-names" id="brand-jaguar"><img src="/img/car logo/jaguar.png"
+              alt="Jaguar"><span>Jaguar</span></a>
+          <a href="#brand-land-rover" class="car-names" id="brand-land-rover"><img src="/img/car logo/land rover.png"
+              alt="Land Rover"><span>Land Rover</span></a>
+
+          <!-- Duplicates -->
+          <a href="#brand-lamborghini" class="car-names"><img src="/img/car logo/lamborghini.png"
+              alt="Lamborghini"><span>Lamborghini</span></a>
+          <a href="#brand-nissan" class="car-names"><img src="/img/car logo/nissan.png"
+              alt="Nissan"><span>Nissan</span></a>
+          <a href="#brand-chevrolet" class="car-names"><img src="/img/car logo/chevrolet.png"
+              alt="Chevrolet"><span>Chevrolet</span></a>
+          <a href="#brand-hyundai" class="car-names"><img src="/img/car logo/hyundai.png"
+              alt="Hyundai"><span>Hyundai</span></a>
+          <a href="#brand-kia" class="car-names"><img src="/img/car logo/kia.png" alt="Kia"><span>Kia</span></a>
+          <a href="#brand-subaru" class="car-names"><img src="/img/car logo/suruba.png"
+              alt="Subaru"><span>Subaru</span></a>
+          <a href="#brand-mazda" class="car-names"><img src="/img/car logo/mazda.png" alt="Mazda"><span>Mazda</span></a>
+          <a href="#brand-lexus" class="car-names"><img src="/img/car logo/lexus.png" alt="Lexus"><span>Lexus</span></a>
+          <a href="#brand-jaguar" class="car-names"><img src="/img/car logo/jaguar.png"
+              alt="Jaguar"><span>Jaguar</span></a>
+          <a href="#brand-land-rover" class="car-names"><img src="/img/car logo/land rover.png"
+              alt="Land Rover"><span>Land Rover</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/img/Odugwu wheels.png" alt="Odugwu Wheels" class="footer-logo">
+        <p>Premium Automotive Experience Worldwide</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> info@napoleonswheels.com</p>
+        <p><strong>Phone:</strong> +234 000 000 0000</p>
+        <p><strong>Location:</strong> Awka, Anambra, Nigeria</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Odogwu Wheels. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
